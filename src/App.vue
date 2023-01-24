@@ -7,7 +7,7 @@ import LikeSad from "./components/LikeSad.vue";
       <div v-for="n in 6" :key="n" class="col-3 m-3 p-2">
         <div class="card" style="width: 18rem">
           <img
-            src="  https://images.pexels.com/photos/955855/pexels-photo-955855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            src="https://images.pexels.com/photos/955855/pexels-photo-955855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="car d-img-top"
             alt="..."
           />
