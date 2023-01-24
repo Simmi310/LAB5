@@ -4,11 +4,9 @@ const like = ref(5);
 const sad = ref(1);
 function likeClick() {
   like.value += 5;
-  {
-  }
-  function sadClick() {
-    sad.value -= 1;
-  }
+}
+function sadClick() {
+  sad.value -= 1;
 }
 </script>
 <template>
