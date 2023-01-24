@@ -1,47 +1,27 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import LikeSad from "./components/LikeSad.vue";
 </script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+  <div class="container w-100">
+    <div class="row justify-content-center">
+      <div v-for="n in 6" :key="n" class="col-3 m-3 p-2">
+        <div class="card" style="width: 18rem">
+          <img
+            src="  https://images.pexels.com/photos/955855/pexels-photo-955855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="car d-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the bulk of
+              the card's content.
+            </p>
+            <LikeSad></LikeSad>
+          </div>
+        </div>
+      </div>
     </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
